@@ -23,13 +23,14 @@ public class SimpleSubstitution {
         line = in.next().trim().substring(0,1).toLowerCase();
       }
       boolean encrypt = line.equals("e");
-      do {
+      line = "";
+      while (line.length()==0) {
         System.out.print("Substitution Key: ");
-        line = in.nextLine().toLowerCase();
-        Set<String> test = new HashSet<String>(Arrays.asList(line.split("\\s+")));
+        line = in.next().toLowerCase();
+        Set<String> test = new HashSet<String>(Arrays.asList(line.split(",")));
         if (test.size() != 26) {line="";}
-      } while (line.length()==0);
-      for (String letter : line.split("\\s+")) {
+      }
+      for (String letter : line.split(",")) {
         sub.add(new Integer((int)letter.charAt(0)));
       }
       do {
