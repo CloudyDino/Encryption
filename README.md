@@ -22,5 +22,5 @@ This is a Vigenère and Gronsfeld cipher in which a word is used to determine sh
   - If you decide to encrypt each line seperately, then the word starts from the begining at the beginning of each line.
 
 ###RSA Encryption
-This is an RSA Encryption program that can create public and private keys as well as using the public and private keys to encrypt files.
+This is an RSA Encryption program that can create public and private keys as well as using the public and private keys to encrypt files. Not yet completed since it encrypts letter by letter.
  - When creating public and private keys, makes sure to enter in proper prime numbers.
